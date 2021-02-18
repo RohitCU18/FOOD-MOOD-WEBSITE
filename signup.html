@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sign Up</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+
+<script>
+        
+function abc()
+        
+{
+    
+
+
+   var c = document.getElementById("l").value;         
+
+if(c.length==10)
+            {
+              window.open("menupage1.html");    
+           confirm("Do you want this site to remember this information");
+          
+            }
+else
+{
+alert("please enter valid information");
+
+}   
+   
+    }
+    
+    
+</script>
+
+
+
+
+    
+<style>
+    fieldset { 
+    display: block;
+    -moz-border-radius:8px;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px groove ;
+    }
+
+
+body {
+    
+    background-image: url("bg.jpg");
+    font-size:20;
+
+    height: 100%; 
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+</style>
+
+
+
+
+
+</head>
+<body  font-color="red">
+	<br><br><br>
+<fieldset>
+    <legend><center style="font-size: 50px;color: darkcyan;"><h1 style="color:black;font-size: 60px; font-family:courier;">Sign Up</h1></center></legend>
+<form >
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">First Name:</td>
+    <td><input type='text' required class="form-control" placeholder="Enter your First Name.." ></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">Sur Name:</td>
+    <td><input type='text' required class="form-control" placeholder="Enter your Sur Name.."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">Date Of Birth:</td>
+    <td><input type='Date' required class="form-control" placeholder="Enter your DOB"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">State:</td>
+    <td><input type='text' required class="form-control" placeholder="Enter your State Name"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">Phone:</td>
+    <td><input type='number' id="l" required class="form-control" placeholder="Enter your Phone No."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+
+    <td align='left' style="color:black;font-size: 30px; font-family:courier;">Email:</td>
+     
+    <td><input  type='Email'   required class="form-control" placeholder="Enter your Email ID" id="mail" name="email"></td>
+</div>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td colspan="2" align='center'><br><br><br><input type='submit' class="btn btn-outline-danger" value="Register" onclick="abc()" ></td>
+</tr>
+</table>
+</form>
+
+</fieldset>
+</body>
+</html>

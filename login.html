@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log-In</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+
+	<style>
+    fieldset { 
+    display: block;
+    -moz-border-radius:8px;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px groove ;
+    }
+
+
+body {
+    
+    background-image: url("BG1.jpg");
+    font-size:20;
+
+    height: 100%; 
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+</style>
+
+
+
+
+
+<script>
+		
+function abc()
+		
+{
+			
+var a = document.getElementById('a').value;
+			
+var b = /^[A-Z][a-z]+[0-9]+[@|#|!|^|&|*|?|%]/g;
+			
+if(a.match(b))
+			
+{
+				
+confirm("Do you want this site to remember this password");
+			window.open("menupage1.html");
+}
+
+else
+{
+alert("Your password doesnot match the required criteria");
+}		
+}
+	
+</script>
+
+
+</head>
+<body>
+    <BR><BR><BR>
+	<fieldset><legend><h2 align="center" style="color:black;font-size: 60px; font-family:courier;">LOGIN</h2></legend>
+<div class="loginbox">
+	<center><img class="avatar" src="img/avtar.jpg"><br><br>
+	<form >
+        <table>
+		<tr><td><p style="color:black;font-size: 25px; font-family:courier;"> Username : </p></td>
+		<td><input type="text" placeholder="Enter Username" required  class="form-control"><br></td></tr>
+		<tr><td><p style="color:black;font-size: 25px; font-family:courier;">Passsword : </p></td>
+            <td>
+		<input type="password" class="pass form-control" id="a" placeholder="Enter Passsword" required  name="password"></td>
+    </tr>
+
+</table><br><br>
+
+
+		<a href="menupage1.html"><input type="submit" onclick="abc()" value="Log In"  class="btn btn-outline-danger"></a>
+</form>
+<br><br>
+<center><pre style="color: black;">___________________________________________________OR_______________________________________________________
+</pre><center><p><h3 align="center" style="color:black;font-size: 40px; font-family:courier;">NEW HUNGRY!!</h3></p>
+<center><a href="signup.html" style="color: white;"><button  class="btn btn-outline-danger">Create New Account</button></a></center>	
+</center>
+</div>
+</fieldset>
+</body>
+</html>

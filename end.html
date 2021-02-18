@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<title>Billing Section</title>
+
+
+	<style>
+    fieldset { 
+    display: block;
+    -moz-border-radius:8px;
+    border-radius:10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px groove ;
+    }
+    body {
+    
+    background-image: url("KHEER.jpg");
+    font-size:30;
+
+    height: 100%; 
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+
+}
+
+</style>
+	<script>
+	function bc()
+    {
+        var a = document.getElementById("l").value;
+        var b = document.getElementById("k").value;
+            if(a.length==10)
+            {
+              if(b.length==10)
+            {
+              window.open('thank.html');
+            }
+
+            else
+            {
+
+              alert("please enter a valid information");
+
+			}  
+} 
+  else
+            {
+
+              alert("please enter a valid information");
+
+			}  
+    
+
+    }
+
+
+    </script>
+</head>
+<body>
+	<br><br><br><br><br><br><br>
+	<fieldset>
+	
+
+
+<legend><h1 align="center" style="font-size: 60px;font-family:Courier; color:black;"><center>FILL THE INFORMATION</center></h1></legend>
+<center>
+<form>
+	<table>
+		<tr>
+			<td rowspan="2"><img class="avatar" src="img/avtar.jpg"> </td>
+			<td>
+				<p><h2 align="center" style="font-size: 30px;font-family:Courier; color:black;">MOBILE NO:</h2></p>
+			</td>
+			<td>
+				<input type="number" placeholder="Please enter your No." id="l" required class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><h2  align="center" style="font-size: 30px;font-family:Courier; color:black;">ADDRESS:</h2></p>
+			</td>
+			<td>
+				<input type="TEXT" placeholder="Address.." id="k" required class="form-control">
+			</td>
+		</tr>
+		<br><br>
+
+<tr><td align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="bc()" class="btn btn-outline-danger mx-auto">EXIT</button></td></tr>
+	</table> 
+</form>
+
+</center>
+</fieldset>
+
+</body>
+</html>
